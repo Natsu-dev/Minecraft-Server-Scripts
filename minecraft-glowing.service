@@ -1,0 +1,14 @@
+[Unit]
+Description=effect glowing
+
+[Service]
+User=user
+Group=user
+
+WorkingDirectory=/home/user/minecraft
+Type=simple
+
+ExecStart=/usr/bin/screen -S minecraft -X eval 'stuff "effect give @a minecraft:glowing 610 0 true"\015'
+
+[Install]
+WantedBy=multi-user.target

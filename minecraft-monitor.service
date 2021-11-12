@@ -1,0 +1,16 @@
+[Unit]
+Description=Minecraft Server Monitor
+After=network.target
+
+[Service]
+User=user
+Group=user
+
+WorkingDirectory=/home/user/Minecraft-Server-Monitor/
+
+Restart=always
+
+ExecStart=/usr/local/bin/node /home/user/Minecraft-Server-Monitor/main.js
+
+[Install]
+WantedBy=multi-user.target

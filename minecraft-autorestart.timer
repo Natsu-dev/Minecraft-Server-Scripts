@@ -1,0 +1,9 @@
+[Unit]
+Description=timer minecraft-autorestart
+
+[Timer]
+# 毎日4:58にMinecraftを再起動
+OnCalendar=*-*-* 04:58:00
+
+[Install]
+WantedBy=timers.target

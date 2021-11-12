@@ -1,0 +1,10 @@
+[Unit]
+Description=Wake on LAN enabler
+After=network.target
+
+[Service]
+ExecStart=/usr/sbin/ethtool -s enp4s0 wol g
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
