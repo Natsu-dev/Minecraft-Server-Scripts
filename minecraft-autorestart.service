@@ -11,7 +11,7 @@ Type=oneshot
 RemainAfterExit=no
 
 ExecStart=./autorestart.sh
-# stop.shに再起動は含まれていないが、終了するとminecraft.serviceにより再起動される
+# autorestart.shに再起動は含まれていないが、終了するとminecraft.serviceにより再起動される
 
 [Install]
 WantedBy=multi-user.target
