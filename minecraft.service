@@ -10,8 +10,8 @@ Group=user
 
 WorkingDirectory=/home/user/minecraft
 
-ExecStart=./start.sh
-ExecStop=./stop.sh
+ExecStart=/usr/bin/bash start.sh
+ExecStop=/usr/bin/bash stop.sh
 
 [Install]
 WantedBy=multi-user.target
