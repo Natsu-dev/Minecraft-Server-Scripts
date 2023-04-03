@@ -1,0 +1,7 @@
+BASH_PATH=/usr/bin/bash
+MINECRAFT_DIR_PATH=/home/user/minecraft/
+MONITOR_DIR_PATH=/home/user/Minecraft-Server-Monitor/
+MINECRAFT_JARNAME=spigot.jar
+JAVA_PATH=/usr/bin/java
+USERNAME=user
+GROUPNAME=group

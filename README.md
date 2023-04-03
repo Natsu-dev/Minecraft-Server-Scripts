@@ -37,3 +37,8 @@
 毎回起動時にWake on LAN機能を有効化するためのサービスです。
 Ubuntu Server等で毎回起動時にWake on LAN機能が無効化される仕様があるものの、解除する方法がわからなかったため仮の処置として用意しています。
 WoLを使う予定がない、WoLが無効化される仕様のない環境なら使用する必要はありません。
+
+## Minecraft_EnvFile
+## Minecraft_EnvFile.sample
+環境変数ファイルです。
+ファイル名から `.sample` 部分を削除したものを作成し、 `/etc/sysconfig/` 下に置きます。
