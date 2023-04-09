@@ -1,0 +1,16 @@
+[Unit]
+Description=Secure Share Net
+After=network.target
+
+[Service]
+User=user
+Group=user
+
+WorkingDirectory=/home/user/
+
+Restart=always
+
+ExecStart=/home/user/securesharenet
+
+[Install]
+WantedBy=multi-user.target
