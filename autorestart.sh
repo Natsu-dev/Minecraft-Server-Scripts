@@ -5,3 +5,5 @@
 /bin/sleep 120
 /usr/bin/screen -S minecraft -X eval 'stuff "save-all"\015'
 /usr/bin/screen -S minecraft -X eval 'stuff "stop"\015'
+/bin/sleep 10
+/usr/bin/cp -r /home/user/minecraft/ /home/user/minecraft-backup/`date +%Y%m%d%`-`date +%H%M%S`/
