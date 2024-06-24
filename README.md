@@ -10,6 +10,9 @@
 - minecraft-monitor.service
 - wake-on-lan-enable.service
 
+また、環境によっては以下も必要です。
+- secure-share-net.service
+
 ## minecraft
 ### minecraft.service
 マイクラサーバー本体の起動用サービスです。後述する "minecraft-autorestart" によってサーバーを停止した際やサーバーが落ちた際は自動で再起動されます。

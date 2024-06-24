@@ -10,7 +10,7 @@ Group=user
 Type=oneshot
 RemainAfterExit=no
 
-ExecStart=./autorestart.sh
+ExecStart=/usr/bin/bash ./autorestart.sh
 # autorestart.shに再起動は含まれていないが、終了するとminecraft.serviceにより再起動される
 
 [Install]
