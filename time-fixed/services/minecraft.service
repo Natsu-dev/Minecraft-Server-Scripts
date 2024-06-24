@@ -1,0 +1,17 @@
+[Unit]
+Description=Minecraft Server
+After=syslog.target
+
+[Service]
+Type=simple
+Restart=on-failure
+
+User=user
+Group=user
+WorkingDirectory=/home/user/minecraft
+
+ExecStart=/usr/bin/bash start.sh
+ExecStop=/usr/bin/bash stop.sh
+
+[Install]
+WantedBy=multi-user.target
