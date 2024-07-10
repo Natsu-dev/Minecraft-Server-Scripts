@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for minecraft-announce
+
+[Timer]
+# 毎日02:00に実行
+OnCalendar=*-*-* 01:55:00
+
+[Install]
+WantedBy=timers.target
