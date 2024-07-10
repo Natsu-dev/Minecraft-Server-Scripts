@@ -5,10 +5,6 @@ After=syslog.target
 [Service]
 Type=oneshot
 
-User=user
-Group=user
-WorkingDirectory=/home/user/minecraft
-
 ExecStart=/usr/bin/systemctl start minecraft.service
 
 [Install]

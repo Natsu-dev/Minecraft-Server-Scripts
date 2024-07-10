@@ -5,11 +5,7 @@ After=syslog.target
 [Service]
 Type=oneshot
 
-User=user
-Group=user
-WorkingDirectory=/home/user/minecraft
-
-ExecStart=/usr/bin/systemctl stop minecraft.service
+ExecStart=/usr/bin/screen -S minecraft -X eval 'stuff "say 5分後にサーバーを停止します。退出準備をお願いします。"\015'
 
 [Install]
 WantedBy=multi-user.target
