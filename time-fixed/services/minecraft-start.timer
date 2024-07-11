@@ -1,0 +1,12 @@
+[Unit]
+Description=Timer for minecraft-start
+
+[Timer]
+# 平日18:00に実行
+OnCalendar=Mon-Fri *-*-* 18:00:00
+# 土日8:00に実行
+OnCalendar=Sat,Sun *-*-* 8:00:00
+# 祝日は一旦手作業対応
+
+[Install]
+WantedBy=timers.target

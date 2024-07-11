@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for minecraft-stop
+
+[Timer]
+# 毎日02:00に実行
+OnCalendar=*-*-* 02:00:00
+
+[Install]
+WantedBy=timers.target
